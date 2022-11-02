@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .center {
+    text-align: center;
+    color= DodgerBlue;
+
+  }
+  </style>
+</head>
+<body>
+<script>
+function myFunction1() {
+  document.getElementById("table").style.width = "300px";
+}
+function myFunction2() {
+  document.getElementById("table").style.width = "500px";
+}
+function myFunction3() {
+document.getElementById("table").style.border = "3px solid black";
+document.getElementById("table").style.borderSpacing = "3px";
+}
+function myFunction4() {
+document.getElementById("table").style.border = "10px solid black";
+document.getElementById("table").style.borderSpacing = "10px";
+}
+function myFunction5() {
+document.getElementById("table").style.border = "20px solid black";
+document.getElementById("table").style.borderSpacing = "20px";
+}
+function myFunction6() {
+document.getElementById("table").style.backgroundColor = "red";
+}
+function myFunction7() {
+document.getElementById("table").style.backgroundColor = "yellow";
+}
+function myFunction8() {
+document.getElementById("table").style.backgroundColor = "green";
+}
+function myFunction9() {
+document.getElementById("table").style.backgroundColor = "skyblue";
+}
+function myFunction10() {
+document.getElementById("table").removeAttribute('style');
+}
+</script>
+<table id="table">
+<tr bgcolor="DodgerBlue">
+  <th>math</th>
+  <th>english</th>
+  <th>programming</th>
+</tr>
+<tr>
+  <td>90</td>
+  <td>60</td>
+  <td>80</td>
+</tr>
+<tr>
+  <td>80</td>
+  <td>86</td>
+  <td>98</td>
+</tr>
+</table>
+<h1>Change The Table Width</h1>
+<button type="button" onclick="myFunction1()">300px</button><button type="button" onclick="myFunction2()">500px</button>
+<h2>Change The Border And the Spacing Width</h2>
+<button type="button" onclick="myFunction3()">3px</button><button type="button" onclick="myFunction4()">10px</button><button type="button" onclick="myFunction5()">20px</button>
+<h3>Change The Table Color</h3>
+<button type="button" onclick="myFunction6()">red</button><button type="button" onclick="myFunction7()">yellow</button><button type="button" onclick="myFunction8()">green</button><button type="button" onclick="myFunction9()">skyblue</button>
+<h4>Reset</h4>
+<button type="button" onclick="myFunction10()">Reset</button>
+</body>
+</html>
